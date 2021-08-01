@@ -11,7 +11,7 @@ export class AuthGuardService implements CanActivate{
   constructor() { }
 
   canActivate(next:ActivatedRouteSnapshot, state: RouterStateSnapshot){
-    if(localStorage.getItem("username")){
+    if(localStorage.getItem("id_user")){
       console.log("entro");
       return true;
     }else{

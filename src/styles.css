@@ -1,4 +1,11 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 .badge-primary {
     color: #fff;
     background-color: #007bff;
+}
+.float-right{
+    float: right;
+}
+i.bi{
+    cursor: pointer;
 }

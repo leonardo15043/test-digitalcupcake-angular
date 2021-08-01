@@ -1,1 +1,21 @@
-<p>albumes works!</p>
+<div class="container mt-5">
+    <app-header></app-header>
+    <div class="row mt-5"> 
+      <div class="col">
+          <h2>Listado de artistas</h2>
+      </div>
+      <div class="row  mt-5">
+        <div class="col-12 col-md-4" *ngFor="let item of albums; let i = index;" >
+            <div class="card" style="width: 18rem;"  >
+                <div class="card-body">
+                  <h5 class="card-title">{{ item.name }}</h5>
+                  <p class="card-text"><b>Año</b> {{ item.year }}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" [routerLink]="['/songs',id_artist,i]">Canciones</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

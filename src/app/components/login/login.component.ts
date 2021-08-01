@@ -15,14 +15,14 @@ export class LoginComponent {
   constructor(  public router: Router ) { }
 
   login(){
-    let data = users.filter( (entry) => {
+    let data:any = users.filter( (entry) => {
       return entry.username === this.name;
     });
 
     if(data.length == 0){
       this.alert = true;
     } else {
-      localStorage.setItem("username",data[0].username);
+      localStorage.setItem("id_user", data[0].id);
       this.router.navigate(['/home',data[0].id]);
     }
   }

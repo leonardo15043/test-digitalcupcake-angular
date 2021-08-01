@@ -8,13 +8,17 @@ import { HomeComponent } from './components/home/home.component';
 import { AlbumesComponent } from './components/albumes/albumes.component';
 import { FormsModule } from '@angular/forms';
 import { AuthGuardService } from './services/auth-guard.service';
+import { HeaderComponent } from './components/header/header.component';
+import { SongComponent } from './components/song/song.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    AlbumesComponent
+    AlbumesComponent,
+    HeaderComponent,
+    SongComponent
   ],
   imports: [
     BrowserModule,
